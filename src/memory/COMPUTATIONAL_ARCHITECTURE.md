@@ -37,7 +37,7 @@ This knowledge graph defines the fundamental concepts of CPU and GPU architectur
 - GraphicsRendering - 圖形渲染 - 3D scenes, shaders
 - Gaming - 遊戲 - Real-time graphics and physics
 - VideoEditing - 影片編輯 - Frame processing
-- DeepLearning - 深度學習 - Neural networks, AI training
+- DeepLearning - 深度學習 - Neural networks, model training
 - ScientificComputing - 科學計算 - Simulations, modeling
 - BigData - 大數據 - Large-scale data analytics
 
