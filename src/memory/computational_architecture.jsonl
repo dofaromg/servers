@@ -1,0 +1,39 @@
+{"type":"entity","name":"CPU","entityType":"Processor","observations":["Central Processing Unit - 中央處理器","Few cores with strong single-core performance","Complex control units for sophisticated instruction handling","Optimized for sequential/serial processing","博學多聞的博士生 - Like a knowledgeable PhD student who can solve complex problems"]}
+{"type":"entity","name":"GPU","entityType":"Processor","observations":["Graphics Processing Unit - 圖形處理器","Thousands of small simplified cores","Specialized for parallel computation","Optimized for simultaneous data processing","訓練有素的數學系學生 - Like trained math students who can quickly perform many calculations simultaneously"]}
+{"type":"entity","name":"SerialProcessing","entityType":"ComputingMode","observations":["Sequential task execution - 序列化處理","Processes one task at a time","Best for complex logic and instruction handling","CPU's primary operating mode"]}
+{"type":"entity","name":"ParallelProcessing","entityType":"ComputingMode","observations":["Simultaneous task execution - 平行處理","Processes many tasks concurrently","Best for data-intensive operations","GPU's primary operating mode"]}
+{"type":"entity","name":"CPUCore","entityType":"ProcessingUnit","observations":["Powerful and versatile processing unit","Few in number but high capability","Complex architecture with sophisticated control logic","Handles diverse instruction types efficiently"]}
+{"type":"entity","name":"GPUCore","entityType":"ProcessingUnit","observations":["Simplified and specialized processing unit","Thousands of cores per GPU","Streamlined architecture for specific calculations","Optimized for mathematical operations"]}
+{"type":"entity","name":"SystemOperations","entityType":"ApplicationDomain","observations":["Operating system management","Process scheduling and resource allocation","Memory management","Requires complex logic handling"]}
+{"type":"entity","name":"WebBrowsing","entityType":"ApplicationDomain","observations":["Internet content rendering","JavaScript execution","DOM manipulation","Requires varied instruction processing"]}
+{"type":"entity","name":"DocumentProcessing","entityType":"ApplicationDomain","observations":["Text and document handling - 文書處理","Word processing applications","Spreadsheet calculations","Sequential task workflows"]}
+{"type":"entity","name":"GraphicsRendering","entityType":"ApplicationDomain","observations":["3D scene rendering - 圖形渲染","Pixel shader processing","Vertex transformation","Massive parallel pixel calculations"]}
+{"type":"entity","name":"Gaming","entityType":"ApplicationDomain","observations":["Real-time graphics and physics - 遊戲","Frame rendering","Particle effects","Texture mapping"]}
+{"type":"entity","name":"VideoEditing","entityType":"ApplicationDomain","observations":["Video processing - 影片編輯","Frame-by-frame manipulation","Color correction","Effects rendering"]}
+{"type":"entity","name":"DeepLearning","entityType":"ApplicationDomain","observations":["Neural network training - 深度學習","Matrix multiplication operations","Gradient calculations","Model inference"]}
+{"type":"entity","name":"ScientificComputing","entityType":"ApplicationDomain","observations":["Research calculations - 科學計算","Simulation processing","Data analysis","Complex mathematical modeling"]}
+{"type":"entity","name":"BigData","entityType":"ApplicationDomain","observations":["Large-scale data processing - 大數據","Data analytics","Pattern recognition","High-throughput processing"]}
+{"type":"entity","name":"AIAcceleration","entityType":"TechnologyCapability","observations":["Artificial intelligence computation - AI運算","Machine learning acceleration","Inference optimization","Training acceleration"]}
+{"type":"entity","name":"ModernComputingSystem","entityType":"SystemArchitecture","observations":["Combines CPU and GPU for maximum performance","CPU handles system coordination and complex logic","GPU provides acceleration for parallel workloads","Heterogeneous computing architecture"]}
+{"type":"relation","from":"CPU","to":"SerialProcessing","relationType":"uses"}
+{"type":"relation","from":"CPU","to":"CPUCore","relationType":"contains"}
+{"type":"relation","from":"GPU","to":"ParallelProcessing","relationType":"uses"}
+{"type":"relation","from":"GPU","to":"GPUCore","relationType":"contains"}
+{"type":"relation","from":"CPU","to":"SystemOperations","relationType":"optimizedFor"}
+{"type":"relation","from":"CPU","to":"WebBrowsing","relationType":"optimizedFor"}
+{"type":"relation","from":"CPU","to":"DocumentProcessing","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"GraphicsRendering","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"Gaming","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"VideoEditing","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"DeepLearning","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"ScientificComputing","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"BigData","relationType":"optimizedFor"}
+{"type":"relation","from":"GPU","to":"AIAcceleration","relationType":"enables"}
+{"type":"relation","from":"ModernComputingSystem","to":"CPU","relationType":"contains"}
+{"type":"relation","from":"ModernComputingSystem","to":"GPU","relationType":"contains"}
+{"type":"relation","from":"CPU","to":"ModernComputingSystem","relationType":"coordinatesIn"}
+{"type":"relation","from":"GPU","to":"ModernComputingSystem","relationType":"acceleratesIn"}
+{"type":"relation","from":"CPUCore","to":"SerialProcessing","relationType":"executes"}
+{"type":"relation","from":"GPUCore","to":"ParallelProcessing","relationType":"executes"}
+{"type":"relation","from":"CPU","to":"GPU","relationType":"complementsWith"}
+{"type":"relation","from":"GPU","to":"CPU","relationType":"complementsWith"}
