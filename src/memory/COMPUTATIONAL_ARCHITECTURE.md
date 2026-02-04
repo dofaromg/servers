@@ -1,7 +1,39 @@
 # Computational Architecture Knowledge Base
-# CPU/GPU 處理器架構知識庫
+# CPU/GPU 處理器架構知識庫 - 創世公式實現
 
-This knowledge graph defines the fundamental concepts of CPU and GPU architectures, their characteristics, and relationships for use as an AI supercomputer database.
+This knowledge graph defines the fundamental concepts of CPU and GPU architectures, their characteristics, and relationships for use as an AI supercomputer database. **Now enhanced with the Creation Formula (創世公式) for performance amplification mapping.**
+
+## 創世公式 (Creation Formula)
+
+The core principle that maps **Definition × Precision → Performance Amplification**:
+
+```
+Performance = f(Definition, Precision) × AmplificationFactor
+
+Where:
+- Definition (定義): Fundamental specification of computational units
+- Precision (精度): Accuracy level determining bit-width (FP64/FP32/FP16/INT8)
+- AmplificationFactor: Scaling multiplier based on particle composition
+```
+
+### Amplification Mapping (放大映射)
+
+| Precision Level | Bit Width | Throughput Multiplier | Best For |
+|-----------------|-----------|----------------------|----------|
+| FP64 | 64-bit | 1× (baseline) | 科學計算 Scientific Computing |
+| FP32 | 32-bit | 2× | 遊戲/圖形 Gaming/Graphics |
+| FP16 | 16-bit | 4× | 深度學習 Deep Learning |
+| INT8 | 8-bit | 8× | AI推理 AI Inference |
+
+### Particle Hierarchy (粒子階層)
+
+```
+ParticleDefinition (粒子定義)
+    ↓ composesFrom
+ParticleComposition (粒子組合)
+    ↓ amplifies
+Performance (效能)
+```
 
 ## Entities (實體定義)
 
@@ -48,6 +80,41 @@ This knowledge graph defines the fundamental concepts of CPU and GPU architectur
 | ModernComputingSystem | SystemArchitecture | Heterogeneous CPU+GPU architecture |
 | AIAcceleration | TechnologyCapability | AI/ML computation acceleration |
 
+### Foundation Principles (基礎原則) - NEW
+
+| Entity | Type | Description |
+|--------|------|-------------|
+| Definition | FoundationPrinciple | 定義 - Specification of computational units |
+| Precision | FoundationPrinciple | 精度 - Accuracy level (bit-width) |
+| Performance | FoundationPrinciple | 效能 - Computational throughput |
+| CreationFormula | AmplificationPrinciple | 創世公式 - The mapping principle |
+
+### Precision Levels (精度層級) - NEW
+
+| Entity | Type | Throughput |
+|--------|------|------------|
+| FP64Precision | PrecisionLevel | 1× baseline |
+| FP32Precision | PrecisionLevel | 2× amplified |
+| FP16Precision | PrecisionLevel | 4× amplified |
+| INT8Precision | PrecisionLevel | 8× amplified |
+
+### Creation Elements (創世元素) - NEW
+
+| Entity | Type | Description |
+|--------|------|-------------|
+| ParticleDefinition | CreationElement | 粒子定義 - Fundamental unit spec |
+| ParticleComposition | CreationElement | 粒子組合 - Assembly of particles |
+| AmplificationMapping | CreationElement | 放大映射 - Transform function |
+
+### Performance Resources (效能資源) - NEW
+
+| Entity | Type | Description |
+|--------|------|-------------|
+| ThroughputAmplification | AmplificationMetric | 吞吐量放大 |
+| LatencyReduction | AmplificationMetric | 延遲降低 |
+| MemoryBandwidth | PerformanceResource | 記憶體頻寬 |
+| ComputeDensity | PerformanceResource | 運算密度 |
+
 ## Relations (關係定義)
 
 ### Core Relationships
@@ -76,6 +143,44 @@ CPU --complementsWith--> GPU
 GPU --complementsWith--> CPU
 ```
 
+### Creation Formula Relations (創世公式關係) - NEW
+
+```
+Definition --determines--> Performance
+Precision --affects--> Performance
+CreationFormula --utilizes--> Definition, Precision
+CreationFormula --amplifies--> Performance
+```
+
+### Precision to Application Mapping (精度應用映射) - NEW
+
+```
+FP64Precision --requiredFor--> ScientificComputing
+FP32Precision --usedIn--> Gaming, GraphicsRendering
+FP16Precision --optimizedFor--> DeepLearning
+INT8Precision --enables--> AIAcceleration
+```
+
+### Amplification Relations (放大關係) - NEW
+
+```
+GPU --excelsAt--> ThroughputAmplification
+CPU --excelsAt--> LatencyReduction
+FP16Precision --doubles--> ThroughputAmplification
+INT8Precision --quadruples--> ThroughputAmplification
+MemoryBandwidth --enables--> ThroughputAmplification
+```
+
+### Particle Hierarchy (粒子階層) - NEW
+
+```
+CPUCore --definedBy--> ParticleDefinition
+GPUCore --definedBy--> ParticleDefinition
+ParticleComposition --composesFrom--> ParticleDefinition
+AmplificationMapping --implements--> CreationFormula
+ParticleComposition --amplifies--> Performance
+```
+
 ## Core Differences Summary (核心差異總結)
 
 | Aspect | CPU | GPU |
@@ -85,6 +190,18 @@ GPU --complementsWith--> CPU
 | 核心能力 | Versatile/General | Specialized/Focused |
 | 主要應用 | System tasks, complex logic | Graphics, AI, big data |
 | 比喻 | 博士生 (PhD Student) | 數學系學生 (Math Students) |
+| 放大優勢 | LatencyReduction | ThroughputAmplification |
+| 最佳精度 | FP64/FP32 | FP16/INT8 |
+
+## 創世公式效能放大表 (Performance Amplification Table) - NEW
+
+| Configuration | Definition | Precision | Amplification |
+|---------------|------------|-----------|---------------|
+| CPU + FP64 | Complex | Maximum | 1× (baseline) |
+| CPU + FP32 | Complex | Standard | 2× throughput |
+| GPU + FP32 | Simple×1000s | Standard | 100-1000× parallel |
+| GPU + FP16 | Simple×1000s | Half | 200-2000× parallel |
+| GPU + INT8 | Simple×1000s | Quantized | 400-4000× parallel |
 
 ## Usage
 
