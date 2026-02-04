@@ -16,14 +16,16 @@ Where:
 - AmplificationFactor: Scaling multiplier based on particle composition
 ```
 
-### Amplification Mapping (放大映射)
+### Precision-Based Bandwidth Efficiency (精度頻寬效率)
 
-| Precision Level | Bit Width | Throughput Multiplier | Best For |
-|-----------------|-----------|----------------------|----------|
+| Precision Level | Bit Width | Bandwidth Efficiency | Best For |
+|-----------------|-----------|---------------------|----------|
 | FP64 | 64-bit | 1× (baseline) | 科學計算 Scientific Computing |
 | FP32 | 32-bit | 2× | 遊戲/圖形 Gaming/Graphics |
 | FP16 | 16-bit | 4× | 深度學習 Deep Learning |
 | INT8 | 8-bit | 8× | AI推理 AI Inference |
+
+*Note: These are precision-only multipliers. Total amplification = Bandwidth Efficiency × Parallelism Factor*
 
 ### Particle Hierarchy (粒子階層)
 
@@ -91,12 +93,14 @@ Performance (效能)
 
 ### Precision Levels (精度層級) - NEW
 
-| Entity | Type | Throughput |
-|--------|------|------------|
+| Entity | Type | Bandwidth Efficiency |
+|--------|------|---------------------|
 | FP64Precision | PrecisionLevel | 1× baseline |
-| FP32Precision | PrecisionLevel | 2× amplified |
-| FP16Precision | PrecisionLevel | 4× amplified |
-| INT8Precision | PrecisionLevel | 8× amplified |
+| FP32Precision | PrecisionLevel | 2× efficiency |
+| FP16Precision | PrecisionLevel | 4× efficiency |
+| INT8Precision | PrecisionLevel | 8× efficiency |
+
+*Note: Bandwidth efficiency relative to FP64. Total performance = efficiency × parallelism.*
 
 ### Creation Elements (創世元素) - NEW
 
@@ -195,13 +199,15 @@ ParticleComposition --amplifies--> Performance
 
 ## 創世公式效能放大表 (Performance Amplification Table) - NEW
 
-| Configuration | Definition | Precision | Amplification |
-|---------------|------------|-----------|---------------|
-| CPU + FP64 | Complex | Maximum | 1× (baseline) |
-| CPU + FP32 | Complex | Standard | 2× throughput |
-| GPU + FP32 | Simple×1000s | Standard | 100-1000× parallel |
-| GPU + FP16 | Simple×1000s | Half | 200-2000× parallel |
-| GPU + INT8 | Simple×1000s | Quantized | 400-4000× parallel |
+**Total Amplification = Bandwidth Efficiency × Parallelism Factor**
+
+| Configuration | Definition | Precision | Bandwidth Eff. | Parallelism | Total Amplification |
+|---------------|------------|-----------|----------------|-------------|---------------------|
+| CPU + FP64 | Complex | Maximum | 1× | 1-16 cores | 1-16× |
+| CPU + FP32 | Complex | Standard | 2× | 1-16 cores | 2-32× |
+| GPU + FP32 | Simple×1000s | Standard | 2× | 1000+ cores | 100-1000× |
+| GPU + FP16 | Simple×1000s | Half | 4× | 1000+ cores | 200-2000× |
+| GPU + INT8 | Simple×1000s | Quantized | 8× | 1000+ cores | 400-4000× |
 
 ## Usage
 

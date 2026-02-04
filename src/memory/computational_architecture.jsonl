@@ -76,5 +76,6 @@
 {"type":"relation","from":"CPUCore","to":"ParticleDefinition","relationType":"definedBy"}
 {"type":"relation","from":"GPUCore","to":"ParticleDefinition","relationType":"definedBy"}
 {"type":"relation","from":"ParticleComposition","to":"Performance","relationType":"amplifies"}
-{"type":"relation","from":"FP16Precision","to":"ThroughputAmplification","relationType":"doubles"}
-{"type":"relation","from":"INT8Precision","to":"ThroughputAmplification","relationType":"quadruples"}
+{"type":"relation","from":"FP32Precision","to":"ThroughputAmplification","relationType":"amplifies"}
+{"type":"relation","from":"FP16Precision","to":"ThroughputAmplification","relationType":"amplifies"}
+{"type":"relation","from":"INT8Precision","to":"ThroughputAmplification","relationType":"amplifies"}
